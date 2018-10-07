@@ -6,5 +6,12 @@
  */
 
 #include <vector>
+#include <cassert>
+#include <climits>
+#include <algorithm>
 
-int knapsack_01(int V, vector<int>& c, vector<int>& w);
+int knapsack_01_basic_2D(int V, std::vector<int>& cost, std::vector<int>& value);
+
+int knapsack_01_1D(int V, std::vector<int>& cost, std::vector<int>& value);
+
+int knapsack_01_exact_cost(int V, std::vector<int>& cost, std::vector<int>& value);
