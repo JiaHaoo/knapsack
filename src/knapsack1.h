@@ -12,6 +12,9 @@
 
 int knapsack_01_basic_2D(int V, std::vector<int>& cost, std::vector<int>& value);
 
+// optimize space complexity: using 1D DP array by adjusting iteration order
 int knapsack_01_1D(int V, std::vector<int>& cost, std::vector<int>& value);
 
+// find the maximum value we can get with exactly V cost
+// the only thing to change is the initial state
 int knapsack_01_exact_cost(int V, std::vector<int>& cost, std::vector<int>& value);
